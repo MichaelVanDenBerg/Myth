@@ -1,5 +1,5 @@
 MYTH
-Theme Version: 1.0.4
+Theme Version: 1.0.5
 Author: Michael Van Den Berg 
 Author URL: http://michaelvandenberg.com/
 
@@ -79,10 +79,14 @@ Myth is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, I
 --------------------
 
 *
+* 1.0.5 / 14.05.2016
+* - Removed the sass files from the (WordPress.org) distribution copy.
+*
+
+*
 * 1.0.4 / 14.05.2016
 * - Removed unused folder and files (rtl.css and layouts/content-sidebar.css and layouts/sidebar-content.css).
 * - Removed second link to my website from the footer.
-* - Removed the sass files from the (WordPress.org) distribution copy.
 * - Updated the language pot file.
 * - Added a few additional styles for the site logo.
 *

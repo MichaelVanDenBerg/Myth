@@ -19,9 +19,24 @@
 	min-height: 32px;
 }
 
-.site-branding,
-.social-top {
+.social-top,
+.site-title,
+.site-logo-link {
 	display: inline-block;
+}
+
+.site-branding {
+	display: inline-flex;
+	align-items: center;
+}
+
+.site-logo-link {
+	margin: 0.75em 0.75em 0.75em 0;
+}
+
+.site-logo {
+	max-width: 75px;
+	max-height: 75px;
 }
 
 .site-title {

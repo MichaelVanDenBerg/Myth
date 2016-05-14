@@ -17,7 +17,7 @@
 		<div class="site-info">
 			<span class="generator"><?php echo __( 'Powered by ', 'myth' ) ?><a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>" rel="generator">WordPress</a></span>
 			<span class="sep"> | </span>
-			<span class="designer"><?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'myth' ), '<a href="http://michaelvandenberg.com/portfolio/myth/" rel="theme">Myth</a>', '<a href="http://michaelvandenberg.com/" rel="designer">Michael Van Den Berg</a>' ); ?></span>
+			<span class="designer"><?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'myth' ), '<a href="http://michaelvandenberg.com/portfolio/myth/" rel="theme">Myth</a>', 'Michael Van Den Berg' ); ?></span>
 		</div><!-- .site-info -->
 
 		<div class="social-bottom">

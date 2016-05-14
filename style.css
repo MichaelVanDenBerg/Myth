@@ -5,7 +5,7 @@ Theme URI: https://michaelvandenberg.com/portfolio/myth/
 Author: Michael Van Den Berg
 Author URI: https://michaelvandenberg.com/
 Description: The return of the good, old fashioned, three column holy grail layout. In times past bloggers honored their content with fashionable sidebars on the left AND right side of the screen. Myth plans to uphold that sacred tradition. Yet, it’s modern, responsive and accessibility-ready, and it supports several post formats (Quote, Aside, Links).
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: myth
@@ -974,9 +974,30 @@ button,
   min-height: 32px;
 }
 
-.site-branding,
-.social-top {
+.social-top,
+.site-title,
+.site-logo-link {
   display: inline-block;
+}
+
+.site-branding {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-logo-link {
+  margin: 0.75em 0.75em 0.75em 0;
+}
+
+.site-logo {
+  max-width: 75px;
+  max-height: 75px;
 }
 
 .site-title {

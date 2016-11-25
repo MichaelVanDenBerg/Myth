@@ -55,7 +55,6 @@ function myth_setup() {
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form',
 		'comment-form',
 		'comment-list',
 		'gallery',
@@ -177,7 +176,7 @@ function myth_scripts() {
 	wp_enqueue_style( 'myth-style', get_stylesheet_uri() );
 
 	// Load the theme custom script file.
-	wp_enqueue_script( 'myth-script', get_stylesheet_directory_uri() . '/js/myth.js', array( 'jquery' ), '20151029', true );
+	wp_enqueue_script( 'myth-script', get_template_directory_uri() . '/js/myth.js', array( 'jquery' ), '20151029', true );
 
 	// Loead the skip-link-focus script file.
 	wp_enqueue_script( 'myth-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

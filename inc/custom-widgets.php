@@ -22,8 +22,8 @@
 class myth_recent_comments extends WP_Widget {
 
 	public function __construct() {
-		$widget_ops = array('classname' => 'myth_widget_recent_comments', 'description' => __( 'Your site&#8217;s most recent comments.', 'myth' ) );
-		parent::__construct('recent-comments', __( 'Recent Comments', 'myth' ), $widget_ops);
+		$widget_ops = array('classname' => 'myth_widget_recent_comments', 'description' => esc_html__( 'Your site&#8217;s most recent comments.', 'myth' ) );
+		parent::__construct('recent-comments', esc_html__( 'Recent Comments', 'myth' ), $widget_ops);
 		$this->alt_option_name = 'widget_recent_comments';
 
 		if ( is_active_widget(false, false, $this->id_base) )
@@ -128,7 +128,7 @@ class myth_recent_comments extends WP_Widget {
 				$output .= '<li class="recentcomments">';
 				$output .= sprintf( '%1$s %2$s',
 					'<a href="' . esc_url( get_comment_link( $comment->comment_ID ) ) . '">' . get_comment_excerpt( $comment->comment_ID ) . '</a>',
-					'<div class="comment-widget-author"><span class="comment-widget-byline">' . __( 'By ' , 'myth' ) . '</span>' . '<span class="comment-widget-author-link">' . get_comment_author_link() . '</span></div>'
+					'<div class="comment-widget-author"><span class="comment-widget-byline">' . esc_html__( 'By ' , 'myth' ) . '</span>' . '<span class="comment-widget-author-link">' . get_comment_author_link() . '</span></div>'
 				);
 				$output .= '</li>';
 			}
@@ -169,10 +169,10 @@ class myth_recent_comments extends WP_Widget {
 		$title  = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
 		$number = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
 ?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'myth' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'myth' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" /></p>
 
-		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of comments to show:', 'myth' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number of comments to show:', 'myth' ); ?></label>
 		<input id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
 <?php
 	}

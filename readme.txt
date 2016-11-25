@@ -1,7 +1,7 @@
 MYTH
-Theme Version: 1.0.5
+Theme Version: 1.0.6
 Author: Michael Van Den Berg 
-Author URL: http://michaelvandenberg.com/
+Author URL: https://michaelvandenberg.com/
 
 --------------------
 === Description ===
@@ -77,6 +77,18 @@ Myth is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, I
 --------------------
 === Changelog ===
 --------------------
+
+*
+* 1.0.6 / 25.11.2016
+* - Changed theme URI to: https://michaelvandenberg.com/themes/#myth
+* - Removed the_post_navigation from template-tags.php.
+* - Updated the tags in style.scss and style.css.
+* - Added missing text domain in search-form.php.
+* - Escaped some stuff that needed to be escaped.
+* - Optimized screenshot.png (reduced file size by 76%).
+* - Fixed issue with Chrome not displaying &rarr; (right arrow).
+* - Changed get_stylesheet_directory_uri() in functions.php[179] to get_template_directory_uri().
+*
 
 *
 * 1.0.5 / 14.05.2016

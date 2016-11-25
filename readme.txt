@@ -1,5 +1,5 @@
 MYTH
-Theme Version: 1.0.6
+Theme Version: 1.0.7
 Author: Michael Van Den Berg 
 Author URL: https://michaelvandenberg.com/
 
@@ -77,6 +77,11 @@ Myth is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, I
 --------------------
 === Changelog ===
 --------------------
+
+*
+* 1.0.7 / 25.11.2016
+* - Removed the sass files from the (WordPress.org) distribution copy.
+*
 
 *
 * 1.0.6 / 25.11.2016
